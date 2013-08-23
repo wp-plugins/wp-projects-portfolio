@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* WP Projects Portfolio Admin area CSS Document */
+.perror-msg {
+color:#FF0000;
+font-weight:bold;
+}
+
+.psuc-msg {
+color:#009900;
+font-weight:bold;
+}
+.prec-msg {
+color:#FF6600;
+font-weight:bold;
+}
+
+.prsent{
+color:#009966;
+font-weight:bold;
+}
+
+.switch-ajax {
+width:100px; 
+margin-top:-35px; 
+margin-left:140px;
+}
