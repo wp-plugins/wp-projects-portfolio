@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* Portfolio CSS Document */
+
+/* WP Projects Portfolio Styling file
+-------------------------------------------------------------- */ 
+#wp-portfolios {
+width: 100%;
+
+}
+#wp-portfolios, .portfolio_details {	
+       margin:-160px 0px 0px 0px;
+	 
+    }
+#wp-portfolios .portfolio_details,
+    .wpprojects_portfolio .portfolio_details {
+        width: 75%;
+		  height:220px;
+    }
+#wp-portfolios, .portfolio_details h5 {
+margin:20px 0px 0px 0px;
+float:right;
+}
+#wp-portfolios .portfolio_page_img,
+.wpprojects_portfolio .portfolio_page_img {
+	width: 200px;
+}
+#wp-portfolios .portfolio_page_img img,
+.wpprojects_portfolio .portfolio_page_img img {
+	width: 180px;
+	max-width: 180px;
+}
+#wp-portfolios .portfolio_meta .key,
+.wpprojects_portfolio .portfolio_meta .key {
+	width: 60px;
+}
+#wp-portfolios .portfolio_meta .value,
+.wpprojects_portfolio .portfolio_meta .value {
+	width: 346px;
+}
+#wp-portfolios ul.grid,
+.wpprojects_portfolio ul.grid {
+	background-color: #eeeeee;
+}
+#wp-portfolios .portfolio_title h1, #wp-portfolios .portfolio_title h2,
+.wpprojects_portfolio .portfolio_title h1, .wpprojects_portfolio .portfolio_title h2 {
+	color: #004813;
+}
+#wp-portfolios .portfolio_nav a,
+.wpprojects_portfolio .portfolio_nav a {
+	color: #004813;
+}
+#wp-portfolios .portfolio_entry,
+.wpprojects_portfolio .portfolio_entry {
+	background-color: #f9f9f9;
+}
+#wp-portfolios .portfolio_entry.odd,
+.wpprojects_portfolio .portfolio_entry.odd {
+	background-color: #eeeeee;
+}
+	
+
+.wpprojects_portfolio .grid {
+	float: none;
+	margin: 10px 0;
+	overflow: hidden;
+
+}
+.wpprojects_portfolio_page_content {
+	margin-bottom: 10px;
+}
+.wpprojects_portfolio h1, .wpprojects_portfolio h2 {
+	font-weight: bold;
+	margin: 0 0 20px 0;
+		
+}
+.wpprojects_portfolio h1 {
+	font-size: 2em;
+		background-color:#00CC66;
+}
+.wpprojects_portfolio ul.grid {
+	margin: 0 0;
+	padding: 0 0;
+	overflow: hidden;
+	clear: both;
+}
+.wpprojects_portfolio .grid li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wpprojects_portfolio .portfolio_entry h2 {
+	margin-top: 2px;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+	font-size: 1.6em;
+}
+.wpprojects_portfolio .grid .portfolio_entry h2 {
+	font-size: 1.1em;
+}
+.wpprojects_portfolio .portfolio_entry {
+	clear: both;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	margin: 0;
+	padding: 10px 10px;
+}
+
+
+.wpprojects_portfolio .portfolio_page_img {
+	float: left;
+}
+.wpprojects_portfolio .portfolio_details {
+	float: right;
+	line-height: 1.5em;	
+}
+
+.wpprojects_portfolio .portfolio_details .portfolio_title h3{
+margin-top:0px;
+color:#333333;
+}
+.wpprojects_portfolio .portfolio_details .portfolio_description {
+margin-top:-15px;
+}
+
+.wpprojects_portfolio .grid .portfolio_details {
+	width: auto;
+}
+.wpprojects_portfolio .grid .portfolio_page_img {
+	text-align: center;
+	margin-bottom: 0;
+}
+.wpprojects_portfolio .portfolio_page_img img {
+	background-color: #000;
+	border: solid 3px #fff;
+	height: auto;
+	margin: 0;
+	padding: 2px 2px;
+}
+.wpprojects_portfolio .portfolio_description {
+	margin-bottom: 10px;
+}
+.wpprojects_portfolio .portfolio_description.after_meta_data {
+	margin-top: 10px;
+	clear: both;
+}
+.wpprojects_portfolio .portfolio_description.after_meta_data p {
+	padding-top: 10px;
+	margin-bottom: 0 !important;
+}
+.wpprojects_portfolio .portfolio_meta .key {
+	float: left;
+	font-weight: bold;
+	clear: both;
+}
+.wpprojects_portfolio .portfolio_meta .value {
+	float: right;
+}
+.wpprojects_portfolio .portfolio_nav {
+	float: right;
+	width: 100%;
+	font-size: 93%;
+	line-height: normal;
+}
+.wpprojects_portfolio .portfolio_nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+.wpprojects_portfolio .portfolio_nav.wpprojects_nav_top ul {
+	margin-bottom: 10px;
+}
+.wpprojects_portfolio .portfolio_nav.wpprojects_nav_bottom ul {
+	margin-top: 10px;
+}
+.wpprojects_portfolio .portfolio_nav ul li {
+	float: left;
+	list-style: none;
+	background: #eeeeee;
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+	border: 1px solid #004813;
+	
+}
+.wpprojects_portfolio .portfolio_nav ul li.selected, .wpprojects_portfolio .portfolio_nav ul li:hover {
+	background:#FFCC99;
+	border: 1px solid #004813;
+	
+}
+.wpprojects_portfolio .portfolio_nav ul li a {
+	display: block;
+	padding: 2px 4px 1px 4px;
+	text-decoration: none;
+	line-height: 1.2em;
+	color:#000000;
+}
+.wpprojects_portfolio .portfolio_credit {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.wpprojects_portfolio .portfolio_credit em, .wpprojects_portfolio .portfolio_credit em a {
+	font-style: italic;
+	opacity: .85;
+}
+.wpprojects_portfolio .portfolio_credit em {
+	font-size: 0.8em;
+}
+.wpprojects_portfolio .portfolio_credit a {
+	font-size: 0.95em;
+	text-decoration: none;
+}
+
+
+div#left-column {
+width: 133px;
+float: left;
+clear: none;
+}
+div#right-column {
+width: 233px;
+float: right;
+clear: none;
+}
+
+.pdiv-clear {
+clear:both;
+}
+
+/********Projects**************************/
+ul, li{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+.main-container h1{font-family: 'oswaldregular', arial;padding: 10px 0; font-weight: normal;text-transform: uppercase;color:#108abf;font-size: 32px; }
+.project-container {overflow: hidden;padding-bottom: 15px; width:700px;  margin-left:-30px;}
+.project-container ul li{overflow: hidden;width: 50%;float: left;padding: 10px 0;}
+.project-container h2{ font-family: 'Droid Sans', arial; font-size: 22px;font-weight: normal;border-bottom: 1px solid #8f94a3;padding-bottom: 5px;margin: 0 20px 15px 0;color:#656565;}
+.proj-img{float: left;}
+.proj-img a{font-size: 12px;padding: 5px 0;color:#027ada;display: block;}
+.proj-img a:hover{text-decoration: underline;}
+.proj-cont{width: 210px;float: left;padding: 0 10px;min-height: 115px;height: 115px;}
+.proj-cont p{padding-bottom: 5px;font-size: 12px;line-height: 14px; margin-left:-10px;}
+.proj-details{float: left;padding: 0 10px;width:94px; margin-left:-10px;}
+.proj-details a{background:  #6bb41c;border-top: 1px #84af22 solid;border-right: 1px #84af22 solid;float:right;border-bottom: 1px #84af22 solid;border-left: 1px #84af22 solid;border-radius: 2px;color:#fff;font-family: 'Myriad Pro', Arial, serif;text-shadow: 0px 0px 2px #77ae1b;padding: 4px 10px;font-size:13px;}
+
+.pagination{background: #fffedf;float: right;overflow: hidden; border:1px solid #dad9aa; border-right: none;margin-bottom: 15px;}
+.pagination ul li{float: left;border-right: 1px solid #dad9aa; list-style:none;}
+.pagination ul li a{font-family: 'droid_sans', arial;padding: 10px 19px;color:#4c4c4c;}
+.pagination ul li a:hover{background: #a9a881;color:#fff;}
