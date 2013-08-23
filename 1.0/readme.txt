@@ -16,7 +16,7 @@ WP Projects Portfolio plugin helps managing projects to their portfolio page , t
 
 == How does this work ==
 
-1. Once after installating & activating the WP Projects Portfolio plugin in the WP Admin Dashboard , Projects link will be displayed on left hand site of the menu column
+1. Once after installing & activating the WP Projects Portfolio plugin in the WP Admin Dashboard , Projects link will be displayed on left hand site of the menu column
 2. Add Projects with the form provided as you would normally do for a post.
 3. Create a Portfolio Page , place a short code `[wp-projects-portfolio]`
 4. From the Projects Page in WP Admin , there will be an option to `Request Client Recommendation` & once you click on it , an email with the password along with the link
@@ -40,7 +40,7 @@ You will find 'Projects' menu in your WordPress admin panel.
 
 Do you have questions or issues with WP Projects Portfolio? Use the following support form appropriately.
 
-1. [Support](http://wpdeveloper.com/contact/)
+1. [Support](http://www.wpdeveloper.com/contact/)
 
 == Screenshots ==
 
