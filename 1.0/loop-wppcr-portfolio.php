@@ -8,7 +8,12 @@ global $limit_portfolios_returned;
 global $currpageurl;
 global $port;
 global $display_the_credit;
+global $options;
 
+
+$odd_class ="";
+$ul_close ="";
+$li_close ="";
 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $portfolio_open_empty = "";
@@ -50,7 +55,7 @@ if ( empty($portfolio_types) ) {
 			
 /*$portfolio_open = '<div id="wp-portfolios' . $portnum . '" class="wpprojects_portfolio">';
 $portfolio_open_empty = '<div id="portfolios' . $portnum . '" class="wpprojects_portfolio empty">';*/
-
+$portfolio_open	= '';
 //if ( $loop->have_posts() ) {
 if ( $wp_query->have_posts() ) {
 
