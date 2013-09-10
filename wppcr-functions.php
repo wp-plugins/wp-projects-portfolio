@@ -27,7 +27,6 @@ function wpprojects_portfolio_post_type_init() {
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'menu_position' => 5,
-		'menu_icon' => $script,
 		'supports' => array('title','editor','author'),
 		'register_meta_box_cb' => 'add_wpprojects_portfolio_metaboxes',
 		'taxonomies' => array('wpprojects_portfolio_type','wpprojects_portfolio_tag')
@@ -207,7 +206,7 @@ function wpp_settings_page() {
 ?>
 <div class="wrap">
 <h2>WP Projects Portfolio Options</h2>
-<?php if($_POST['action'] == 'update' && $_POST['option_page'] == 'wp-settings-tab') {
+<?php if(isset($_POST['action']) && $_POST['action'] == 'update' && $_POST['option_page'] == 'wp-settings-tab') {
 	update_option('wprewrite_slug', $_POST['rewrite_slug']);
 	update_option('wprec_message', $_POST['rec_message']);
 	update_option('wpcr_recmessage', $_POST['cr_recmessage']);
@@ -256,10 +255,16 @@ function wpprojects_portfolio_admin_scripts() {
 	if ($continue == "True") {
 		$script = plugins_url('scripts/file_uploader.js', __FILE__);
 		$script = wpprojects_portfolio_clear($script);
+	
+		$ceditorfixscript = plugins_url('scripts/wpppeditor.js', __FILE__);
+		$ceditorfixscript_val = wpprojects_portfolio_clear($ceditorfixscript);
+		
 		wp_enqueue_script('media-upload');
 		wp_enqueue_script('thickbox');
 		wp_register_script('portfolio-image-upload', $script, array('jquery','media-upload','thickbox'));
 		wp_enqueue_script('portfolio-image-upload');
+		wp_register_script( 'wpppeditorfix', $ceditorfixscript_val);
+		wp_enqueue_script( 'wpppeditorfix' );
 		
 	}
 }
@@ -328,6 +333,7 @@ function add_new_wpprojects_portfolio_columns($columns) {
 function manage_wpprojects_portfolio_columns($column_name, $id) {
 	
 	global $wpdb;
+	$strcont ='';
 	
 	switch ($column_name) {
 	case '_sortorder':
@@ -393,6 +399,7 @@ function manage_wpprojects_portfolio_columns($column_name, $id) {
 		$wpp_terms = wp_get_object_terms($id, 'wpprojects_portfolio_type');
 		if(!empty($wpp_terms)){
 		if(!is_wp_error( $wpp_terms )){
+		$term_data	= '';
 		foreach($wpp_terms as $term){
 		$term_data .= '<strong>'.$term->name.'</strong> ,'; 
 		
@@ -462,7 +469,7 @@ return $actions;
 
 function save_wpprojects_portfolio_meta($post_id) {
 	
-	$postid = wp_is_post_revision( $post_ID );
+	$postid = wp_is_post_revision( $post_id );
 	
 	if ( $postid == false ) {
 		
@@ -635,7 +642,7 @@ function wpprojects_portfolio_edit_init() {
 	
     echo '<p><label for="_sortorder">Sort Order: </label>';
 	echo '<input type="text" id="_sortorder" name="_sortorder" value="" class="code" />';
-	echo '<input type="hidden" name="autosave_quickedit_check" value="true" />'. $sortcomments . '</p>';
+	echo '<input type="hidden" name="autosave_quickedit_check" value="true" /></p>';
 
 }
 
@@ -826,11 +833,11 @@ function wpprojects_portfolio_loop($atts, $content = null) {
 	extract( shortcode_atts( array(
       'max_nav_spread' => 5,
 	  'portfolio_type' => '',
-	  'thickbox' => $on_click,
+	  'thickbox' => '',
 	  'id' => '',
 	  'per_page' => '',
 	  'limit' => '',
-      'credit' => $showme_the_credit), $atts ) );
+      'credit' =>''), $atts ) );
 	
 	$for = $max_nav_spread;
 	$portfolio_types = $portfolio_type;
@@ -1386,19 +1393,11 @@ function customs_tinyMCE($settings){
 
 // add custom tinyMCE script and custom tinyMCE initialize content
 
-$plugin_wppp_file = dirname(__FILE__) . '/scripts/wpppeditor.js';
-
-$wppp_plugin_url = plugin_dir_url($plugin_wppp_file);
-
-wp_register_script( 'wpppeditorfix', $wppp_plugin_url.'wpppeditor.js');
-
 $bozuri = $_SERVER['REQUEST_URI'];
 
 if ( strstr($bozuri, 'post_type=wpprojects_portfolio') )
 
 { 
-
-	wp_enqueue_script( 'wpppeditorfix' );
 
 	add_filter('tiny_mce_before_init','customs_tinyMCE');
 
