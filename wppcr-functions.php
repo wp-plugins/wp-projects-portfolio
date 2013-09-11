@@ -289,7 +289,7 @@ function wpprojects_portfolio_display_update_alert() {
 	
 	// if the current user has no ability to manage options then don't bother showing them the transient message
     if (!current_user_can('manage_options')) {
-			wp_die( __('Your user account does not have sufficient privileges to use WP Projects Portfolio Plugin.') );
+			//wp_die( __('Your user account does not have sufficient privileges to use WP Projects Portfolio Plugin.') );
 	 }
 	
 	if ( ( ! empty($message) ) && ( $message != 'empty' ) ) {
@@ -1013,8 +1013,18 @@ function passcodegen($length=10)
 function wpp_clientrec_sent()
 {
 	global $current_screen;
+	$ptrashed ="";
+	$puntrashed = "";
 	
-		if ( 'wpprojects_portfolio' == $current_screen->post_type && !$_REQUEST['trashed'] && !$_REQUEST['untrashed'] ){
+	if(isset($_REQUEST['trashed'])):
+		$ptrashed = $_REQUEST['trashed'];
+	endif;
+	
+	if(isset($_REQUEST['untrashed'])):
+		$puntrashed = $_REQUEST['untrashed'];
+	endif;
+	
+		if ( 'wpprojects_portfolio' == $current_screen->post_type && !$ptrashed && !$ptrashed ){
 			_e('<div class="updated"><p><strong>Client recommendation request has been sent!</strong></p></div>');
 		}
 }
@@ -1230,6 +1240,11 @@ if ( ! is_admin() ) {
 
 function wp_admin_bar_crtotalcount_item() {
 global $wpdb, $wp_admin_bar;
+
+if ( ! is_super_admin() || ! is_admin_bar_showing() )
+	  return;
+
+
 $cr_count = $wpdb->get_var( "SELECT COUNT( * ) AS count
 FROM {$wpdb->postmeta} pm
 LEFT JOIN {$wpdb->posts} p ON p.ID = pm.post_id
