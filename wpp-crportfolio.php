@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP-Projects-Portfolio
 Plugin URI: http://wpdeveloper.com/
-Version: 1.0
+Version: 1.0.1
 Description: Portfolio listing with WP projects name , image, details and type etc... A [wp-projects-portfolio] shortcode is used to include portfolio on any page.
 Author: wpdeveloper
 Author URI: http://wpdeveloper.com/
