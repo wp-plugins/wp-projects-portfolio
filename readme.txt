@@ -55,5 +55,9 @@ Do you have questions or issues with WP Projects Portfolio? Use the following su
 == Changelog ==
 version 1.0
 
+Updated latest version features
+
+Version 1.0.1
+
 == Upgrade Notice ==
-version 1.0
+version 1.0.1
