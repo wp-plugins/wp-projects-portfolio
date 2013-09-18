@@ -53,11 +53,6 @@ Do you have questions or issues with WP Projects Portfolio? Use the following su
 7. screenshot-7.png 
 
 == Changelog ==
-version 1.0
-
-Updated latest version features
-
-Version 1.0.1
-
-== Upgrade Notice ==
-version 1.0
+= Version 1.0.1 =
+* The required latest functions upgrade with WordPress version 3.6.1
+* Updated conditional statements , checked capabilities & fixed issues.
