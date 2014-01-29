@@ -3,7 +3,7 @@ Contributors: phptechie
 Donate link: http://www.wpdeveloper.com/
 Tags: projects , portfolio , testimonials , references , recommendations , reviews , client quotes
 Requires at least: 3.2
-Tested up to: 3.6
+Tested up to: 3.8.1
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ WP Projects Portfolio helps to maintain Projects page with Client Testimonials s
 
 WP Projects Portfolio plugin helps managing projects to their portfolio page , this also has Request For Client Testimonial option with secure password protection that can be sent from the WP Admin Dashboard.
 
-== How does this work ==
+How does this work:
 
 1. Once after installing & activating the WP Projects Portfolio plugin in the WP Admin Dashboard , Projects link will be displayed on left hand site of the menu column.
 2. Add Projects with the form provided as you would normally do for a post.
@@ -28,6 +28,21 @@ WP Projects Portfolio plugin helps managing projects to their portfolio page , t
 9. Edit the Project page & at the bottom under Recommendation box , select the ` Display in the website:` ON
 10. Now the client recommendation for that particular project will be displayed under the Project details page on the Visitor side
 11. You can also switch off , if you choose not to display the recommendation
+
+Tested on:
+
+PC Safari :)
+PC Chrome :)
+PC Firefox :)
+PC ie7+ versions
+
+Website
+
+http://www.wpdeveloper.com/
+
+Please Vote and Enjoy
+
+Your votes really make a difference! Thanks.
 
 == Installation ==
 
@@ -53,7 +68,6 @@ Do you have questions or issues with WP Projects Portfolio? Use the following su
 7. screenshot-7.png 
 
 == Changelog ==
-version 1.0
-
-== Upgrade Notice ==
-version 1.0.1
+= Version 1.0.1 =
+* The required latest functions upgrade with WordPress version 3.8.1
+* Updated conditional statements , checked capabilities & fixed issues.
