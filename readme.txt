@@ -31,10 +31,10 @@ How does this work:
 
 Tested on:
 
-PC Safari :)
-PC Chrome :)
-PC Firefox :)
-PC ie7+ versions
+* PC Safari :)
+* PC Chrome :)
+* PC Firefox :)
+* PC ie7+ versions
 
 Website
 
