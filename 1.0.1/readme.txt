@@ -3,7 +3,7 @@ Contributors: phptechie
 Donate link: http://www.wpdeveloper.com/
 Tags: projects , portfolio , testimonials , references , recommendations , reviews , client quotes
 Requires at least: 3.2
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -69,5 +69,5 @@ Do you have questions or issues with WP Projects Portfolio? Use the following su
 
 == Changelog ==
 = Version 1.0.1 =
-* The required latest functions upgrade with WordPress version 3.8.1
+* The required latest functions upgrade with WordPress version 3.9
 * Updated conditional statements , checked capabilities & fixed issues.
