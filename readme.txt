@@ -3,8 +3,8 @@ Contributors: phptechie
 Donate link: http://www.wpdeveloper.com/
 Tags: projects , portfolio , testimonials , references , recommendations , reviews , client quotes
 Requires at least: 3.2
-Tested up to: 3.8.1
-Stable tag: 1.0.1
+Tested up to: 4.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,12 @@ How does this work:
 9. Edit the Project page & at the bottom under Recommendation box , select the ` Display in the website:` ON
 10. Now the client recommendation for that particular project will be displayed under the Project details page on the Visitor side
 11. You can also switch off , if you choose not to display the recommendation
+
+Category based projects:
+
+Display category based projects using category slug / name
+
+[wp-projects-portfolio per_page=9 portfolio_type='Magazine"]
 
 Tested on:
 
@@ -62,12 +68,15 @@ Do you have questions or issues with WP Projects Portfolio? Use the following su
 1. screenshot-1.png
 2. screenshot-2.png 
 3. screenshot-3.png 
-4. screenshot-4.png 
+4. screenshot-4.png
 5. screenshot-5.png 
 6. screenshot-6.png 
 7. screenshot-7.png 
 
 == Changelog ==
+= Version 1.1
+* Added feature to display category based projects using category slug / name
+* Integrated pagination option for category projects
 = Version 1.0.1 =
 * The required latest functions upgrade with WordPress version 3.8.1
 * Updated conditional statements , checked capabilities & fixed issues.
