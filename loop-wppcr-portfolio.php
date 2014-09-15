@@ -50,8 +50,6 @@ if ( empty($portfolio_types) ) {
 	$wp_query->query( array( 'post_type' => 'wpprojects_portfolio', 'wpprojects_portfolio_type' => $portfolio_types, 'post_status'=>'publish','posts_per_page' => $num_per_page, 'orderby' => 'meta_value' . $options['sort_numerically'], 'meta_key' => '_sortorder', 'order' => 'ASC', 'paged'=> $paged ) );
 }
 
-
-
 			
 /*$portfolio_open = '<div id="wp-portfolios' . $portnum . '" class="wpprojects_portfolio">';
 $portfolio_open_empty = '<div id="portfolios' . $portnum . '" class="wpprojects_portfolio empty">';*/
